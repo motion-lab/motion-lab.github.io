@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="publications">
+		<meta name="author" content="Ioannis Karamouzas">        
+		<meta name="keywords" content="Motion planning, Ioannis Karamouzas, Clemson, Minnesota, Utrecht, Serres, Charleston, power law, path planning, collision avoidance, crowd simulation, virtual worlds">          
+		<title>Clemson University - Motion Planning Lab</title>
+        
+        <!-- Custom styles for this template   -->     
+         <link href="./css/main.css" rel="stylesheet">	
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+		<script src="./scripts/bibtex.js" type="text/javascript" charset="utf-8"></script>></script>
+		<bibtex src="./publications.bib"></bibtex>
+		 
+		<script>
+		$(function() {
+		  $("#Fontselector").on("change",function() {
+		    var font = $("#Fontselector option:selected").text();
+		    console.log(font);
+		
+		    $('.title.fonters').each(function() {
+		    	$(this).css("font-family",font);
+		    });
+		  }); 
+		});   
+		
+    </script>
+	
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+	
+    </head>
+
+<body>
+
+    <!-- Navigation -->
+			<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html">Motion Planning Lab</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+								<li><a href="index.html">Home</a></li>
+                                <li class="active"><a href="#">Publications</a></li>
+                                <li><a href="software.html">Software</a></li>
+								<li><a href="">People</a></li>                                 
+                            </ul>
+                        </div>
+                    </div>
+            </nav>
+                
+ 		
+		 <!-- Page Content -->
+    
+	<div class="container" style="margin-top: 60px">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="searchbar">
+              <h2>Search</h2>
+              <div class="search">
+                <input type="search" class="bibtex_search" placeholder="Search here" required>
+              </div>
+            </div>
+          </div>
+        
+	
+		<div class="col-sm-12">	
+			<div id="pubs">  
+			<h2>Publications</h2>
+			
+			  <div class="bibtex_structure">
+						<div class="group year" extra="DESC number">
+						  <a href="#top" style="display: inline"><em>(Top of the page)</em></a>
+						  <div style="padding-bottom:10px;"></div>
+						  <div class="sort author" extra="ASC string">
+							<div class="templates"></div>
+						  </div>
+						</div>
+			  </div>
+		  
+			   <div class="results" id="publs">
+					  <div id="bibtex_display">
+						<div class="if bibtex_template" style="display: none;">
+						  <ul><li>
+							<span class="if title">
+							  <span class="title" style="font-size: medium; font-weight: bold;"></span>,
+							</span>
+							<div class="if author">
+							  <span class="author" conjunction=", and"><span class="first"></span><span class="last"> </span></span>
+							</div>
+							<div>
+							  <span class="if journal"><em><span class="journal"></span></em>,</span>
+							  <span class="if booktitle">In <em><span class="booktitle"></span></em>,</span>
+							  <span class="if editor"><span class="editor"></span> (editors),</span>
+							  <span class="if publisher"><em><span class="publisher"></span></em>,</span>
+							  <span class="if volume"><span class="volume"></span>,</span>
+							  <span class="if journal number">(<span class="number"></span>),</span>
+							  <span class="if pages"> pages <span class="pages"></span>,</span>
+							  <span class="if year"><span class="year"></span>.</span>
+							  <span class="if note"><span class="note"></span>.</span>
+							  <span class="if pdf">
+									<a class="pdf" href="">[pdf]</a>
+							  </span>
+							  <span class="if project">
+									<a class="project" href="">[project]</a>
+							  </span>
+  							  <span class="if code">
+									<a class="code" href="">[code]</a>
+							  </span>
+
+							  <a class="bibtexVar" role="button" data-toggle="collapse" href="#bib+BIBTEXKEY+" aria-expanded="false" aria-controls="bib+BIBTEXKEY+" extra="BIBTEXKEY">[bib]</a>
+							</div>
+							<div class="bibtexVar collapse" id="bib+BIBTEXKEY+" extra="BIBTEXKEY">
+							  <div class="well">
+								<pre><span class="bibtexraw noread"></span></pre>
+							  </div>
+							</div>
+							<div style="display:none"><span class="bibtextype"></span></div>
+						  </li></ul>
+						</div>
+
+					  <!-- <div class="results" id="publs">
+						<blockquote><div id=paper>Item 1</div></blockquote>
+						<blockquote><div id=paper>Item 2</div></blockquote>
+					  </div> -->
+					  </div>
+				</div>
+			</div>
+        </div>
+		</div>
+		
+		<!-- FOOTER -->
+		 <p>&nbsp;</p>
+		<footer>
+			<p class="pull-right"><a href="#">Back to top</a></p>
+              
+		</footer>
+
+	   </div>
+
+  
+ <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	
+</body></html>
