@@ -3,7 +3,8 @@
  * Edited = September 2018
  * Website = https://github.com/pcooksey/bibtex-js
  * Credit = Henrik Mühe
- *
+ * Modified = October 2020 by Ioannis Karamouzas
+ 
  * Issues:
  *  no comment handling within strings
  *  no string concatenation
