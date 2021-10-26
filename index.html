@@ -1,1 +1,391 @@
-To be updated
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="Motion Planning Lab">
+		<meta name="author" content="Ioannis Karamouzas">        
+		<meta name="keywords" content="Motion planning, Ioannis Karamouzas, Clemson, Minnesota, Utrecht, Serres, Charleston, power law, path planning, collision avoidance, crowd simulation, virtual worlds">          
+		<title>Clemson University - Motion Planning Lab</title>
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+            
+        <!-- Custom styles for this template   -->     
+        <link href="./css/main.css" rel="stylesheet">	 	 
+		 
+    </head>
+
+<body>
+       
+	     <!-- Navigation -->
+  
+	 	 <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>-->
+	
+	 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-slide-nav mb-xs-0" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Motion Planning Lab</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right">
+								<li class="active"><a href="#">Home</a></li>
+                                <li><a href="publications.html">Publications</a></li>
+                                <li><a href="software.html">Software</a></li>
+								<li><a href="">People</a></li>                                 
+                            </ul>
+                        </div>
+                    </div>
+        </nav>
+                
+     	
+	  
+		 
+	  <div class="container"  style="margin-top: 60px">
+		
+		<div class="text-center mt-5">
+                <h1>Motion Planning at Clemson University</h1>
+				<p class="lead"> Cutting-edge research in robotics, computer graphics, and AI </p>
+                <br>
+        </div>
+		
+		<!--<div class="container">
+				    
+				<div class="row">
+					<div class="col-sm-3">
+                            <p>
+                              <h4><strong>Research areas</strong></h4>
+                              <ul>
+								<li> Crowd simulation </li>
+                                <li> Collision avoidance </li>
+								<li> Character control </li>
+								<li> Motion synthesis</li>
+                                <li> Multi-robot navigation </li>
+                                <li> Path planning </li>
+                              </ul>
+                            </p>
+					</div>
+					
+					<!--div class="col-sm-4 ">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">           
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+								<li data-target="#myCarousel" data-slide-to="3"></li>
+								<li data-target="#myCarousel" data-slide-to="4"></li>								
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">									
+									<img src="images/showcase/circle_frame.png" alt="Power Law">															
+								</div>
+								
+								<div class="item">
+									<img src="images/showcase/gait_plots.png" alt="FVO">
+								</div>
+								
+								<div class="item">
+									<img src="images/showcase/crowdspace.png" alt="Interactive">
+								</div>
+								
+								<div class="item">
+									<img src="images/showcase/control.png" alt="Cave">
+								</div>
+								
+								<div class="item">
+									<img src="images/showcase/cyber.png" alt="Cave">
+								</div>
+								
+												
+							</div>
+							<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											  </a>				  
+											  
+							<!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right"></span>
+								<span class="sr-only">Next</span>
+							</a>
+					</div>
+					</div>
+					
+				</div>
+		</div>	-->
+		
+		
+		<br>
+		<br>
+		<!--<section id="research">
+			<p><h4>
+			We are conducting cutting edge research in robotics, computer animation, and AI.
+			</h4></p>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+                            <p>
+                              <h4>Research areas </h4>
+                              <ul>
+								<li> Crowd simulation </li>
+                                <li> Collision avoidance </li>
+								<li> Character control </li>
+								<li> Motion synthesis</li>
+                                <li> Multi-robot navigation </li>
+                                <li> Path planning </li>
+                              </ul>
+                            </p>
+					</div>
+					</div>
+				</div>
+		</section>-->
+
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-2">
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/crowd.png" alt="crowd">
+					<div class="caption text-center">
+					<h5>Crowd Simulation</h5>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2">
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/aamas.png" alt="man">
+					<div class="caption text-center">
+					<h5>Multiagent Navigation</h5>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2">
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/cnav.png" alt="cnav">
+					<div class="caption text-center">
+					<h5>Collision Avoidance</h5>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2">
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/control.png" alt="control">
+					<div class="caption text-center">
+					<h5>Character Control</h5>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2">
+				<!--<a href="" target="_blank" class="thumbnail">-->
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/gait_plots.png" alt="gaits">
+					<div class="caption text-center">
+					<h5>Motion Synthesis</h5>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-2">
+				<div class="thumbnail">
+					<img class="img-fluid" src="images/tree.png" alt="tree">
+					<div class="caption text-center">
+					<h5>Path Planning</h5>
+					</div>
+				</div>
+			</div>
+			
+			
+			</div>
+		</div>
+		
+		<!--
+		<hr color="787878" noshade="noshade">		
+
+		<div id="projects">
+		<h3>Recent Projects</h3>
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-3 mb-3">
+				<a href="http://motion.cs.umn.edu/r/NH-TTC/" target="_blank" class="thumbnail">
+				<img class="img-fluid mb-3" src="images/iccgan.png" alt="nhttc">
+				<div class="caption text-center">
+				<h5>GAN-Based Interactive <br> Character Control</h5>
+				</div>
+				</a>
+			</div>
+			
+			<div class="col-sm-3 mb-3">
+				<a href="http://motion.cs.umn.edu/r/NH-TTC/" target="_blank" class="thumbnail">
+				<img class="img-fluid mb-3" src="images/kdma2.png" alt="nhttc">
+				<div class="caption text-center">
+				<h5>Human-Inspired<br>Multi-Agent Navigation</h5>
+				</div>
+				</a>
+			</div>
+			
+			<div class="col-sm-3 mb-3">
+				<a href="http://motion.cs.umn.edu/r/NH-TTC/" target="_blank" class="thumbnail">
+				<img class="img-fluid mb-3" src="images/pfpn.png" alt="nhttc">
+				<div class="caption text-center">
+				<h5>Particle Filtering<br> Policy Network</h5>
+				</div>
+				</a>
+			</div>
+			
+			
+			<div class="col-sm-3 mb-3">
+				<a href="http://motion.cs.umn.edu/r/NH-TTC/" target="_blank" class="thumbnail">
+				<img class="img-fluid mb-3" src="images/circle_frame.png" alt="nhttc">
+				<div class="caption text-center">
+				<h5>NH-TTC Robot Steering</h5>
+				</div>
+				</a>
+			</div>
+			
+			</div>
+		</div>
+		</div>-->
+			
+		<hr noshade="noshade">
+		<div id="projects"> 
+		<h3>Recent Projects</h3>
+		
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-sm-3 mythumbnail2">
+				<img class="img-fluid mb-3" src="images/kdma.png">
+				</div>
+				<div class="col">				
+						<p>
+						<strong>Human-Inspired  Multi-Agent  Navigation  using  Knowledge  Distillation</strong><br>
+						Pei Xu and Ioannis Karamouzas  <br/>
+						In <i> IEEE/RSJ International Conference on Intelligent Robots and Systems (<a href="http://www.iros2021.org/" target="_blank">IROS 2021</a>)</i>, 2021.<br/>					
+						[<a href="https://arxiv.org/abs/2103.10000">pdf</a>] [<a href="https://motion-lab.github.io/KDMA/">project</a>]
+						[<a href="https://github.com/xupei0610/KDMA">code</a>]
+						</p>
+				</div>	     
+			</div> 
+			
+			<div class="row">
+				<div class="col-sm-3 mythumbnail2">
+				<img class="img-fluid mb-3" src="images/iccgan.png">
+				</div>
+				<div class="col">				
+						<p>
+						<strong>A GAN-Like Approach for Physics-Based Imitation Learning and Interactive Control</strong><br>
+						Pei Xu and Ioannis Karamouzas  <br/>
+						<i> PACMCGIT, 4(3),(Proc of <a =href="https://sa2018.siggraph.org/en/"> ACM SIGGRAPH/Eurographics Symposium on Computer Animation</a>)</i>, 2021.<br/>
+						[<a href="https://drive.google.com/file/d/1baslseYkZQ8V8kllAiGre8bnew7HEHAB/view?usp=sharing">pdf</a>] [<a href="https://motion-lab.github.io/ICCGAN/">project</a>]
+						[<a href="https://github.com/xupei0610/ICCGAN">code</a>]
+						</p>
+				</div>	     
+			</div> 
+			
+			
+			<div class="row">
+				<div class="col-sm-3 mythumbnail2">
+				<img class="img-fluid mb-3" src="images/pfpn.png">
+				</div>
+				<div class="col">				
+						<p>
+						<strong>PFPN: Continuous Control of Physically Simulated Characters using Particle Filtering Policy Network</strong><br>
+						Pei Xu and Ioannis Karamouzas  <br/>
+						In <i> ACM SIGGRAPH Conference on Motion, Interaction and Games (<a href="https://mig2021.inria.fr/" target="_blank">MIG 2021</a>)</i>, 2021.<br/>					
+						[<a href="https://arxiv.org/abs/2003.06959">pdf</a>] [<a href="https://motion-lab.github.io/PFPN/">project</a>]
+						[<a href="https://github.com/xupei0610/PFPN">code</a>]
+						</p>
+				</div>	     
+			</div> 
+			
+
+
+			<div class="row">
+				<div class="col-sm-3 mythumbnail2">
+				<img class="img-fluid mb-3" src="images/digi.png">
+				</div>
+				<div class="col">				
+						<p>
+						<strong>DIGISEW: Anisotropic Stitching for Variable Stretch in Textiles</strong><br>
+						Abhinit Sati, Ioannis Karamouzas, and Victor B. Zordan  <br/>
+						In <i> Symposium on Computational Fabrication (<a href="https://scf.acm.org/" target="_blank">SCF '21</a>)</i>, 2021.<br/>
+						</p>
+				</div>	     
+			</div>   
+			
+		   <div class="row">
+				<div class="col-sm-3 mythumbnail2">
+				<img class="img-fluid mb-3" src="images/circle_frame.png">
+				</div>
+				<div class="col">				
+						<p>
+						<strong>NH-TTC: A gradient-based framework for generalized anticipatory collision avoidance</strong>,<br>
+						Bobby Davis, Ioannis Karamouzas, and Stephen J. Guy,  <br/>
+						In <i> Robotics: Science and Systems (<a href="http://www.roboticsconference.org/" target="_blank">RSS 2020</a>),</i> 2020.<br/>
+						[<a href="http://www.roboticsproceedings.org/rss16/p078.pdf">pdf</a>] [<a href="http://motion.cs.umn.edu/r/NH-TTC/">project</a>] 
+						[<a href="http://motion.cs.umn.edu/r/NH-TTC/">code</a>]
+						</p>
+				</div>	     
+			</div>        
+			
+		</div>
+		</div>
+		
+		<hr noshade="noshade">
+		<div id="spronsors"> 
+		<h3>Sponsors</h3>
+		<p>
+		We would like to thank <a href="https://www.amazon.science/"> Amazon</a>, <a href="https://www.clemson.edu/research/index.html">Clemson University</a>, and the <a href="http://www.nsf.gov/"> National Science Foundation</a> for supporting our research.
+		</p>
+		
+		<!-- Page content-->
+        
+		
+			<!-- FOOTER -->
+            <footer>
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                
+            </footer>
+            
+        </div><!-- /.container -->
+       
+	 
+	 	    <!-- Google Analytics
+         ================================================== -->
+	 <!--<div><a href="http://www.statcounter.com/tumblr/" target="_blank" title="blogspot stats"><img alt="blogspot stats" src="http://c.statcounter.com/4845087/0/44a4d02c/1/"></a></div>
+	   <script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-29422337-2', 'auto');
+		  ga('send', 'pageview');
+
+	</script>-->
+	   
+        <!-- Bootstrap core JavaScript
+         ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     	
+</body></html>
