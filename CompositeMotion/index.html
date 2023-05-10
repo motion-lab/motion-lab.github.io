@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+<meta content="Composite Motion Learning with Task Control" name="description">
+<meta content="character animation, physics-based control, motion synthesis, reinforcement learning, multi-objective learning,
+incremental learning, GAN">
+<title>Composite Motion Learning</title>
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"><!-- Bootstrap CSS File -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<!-- Libraries CSS Files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<link type="text/css" href="../css/project.css" rel="stylesheet"/>
+
+<body>
+
+<h1>Composite Motion Learning with Task Control</h1>
+	
+<div id="authors">
+<a href="https://github.com/xupei0610/" target="_blank">Pei Xu</a><sup><small>1,3</small></sup>,
+<a href="https://www.linkedin.com/in/xiumin-shang-92a466a4" target="_blank">Xiumin Shang</a><sup><small>2</small></sup>,
+<a href="https://people.computing.clemson.edu/~vbz/" target="_blank">Victor Zordan</a><sup><small>3,1</small></sup>,
+<a href="https://people.cs.clemson.edu/~ioannis/" target="_blank">Ioannis Karamouzas</a><sup><small>1</small></sup>
+</div>
+<div id="affiliations">
+<sup><small>1</small></sup><span itemprop="name">Clemson University,</span>
+<sup><small>2</small></sup><span itemprop="name">University of California, Merced,</span>
+<sup><small>3</small></sup><span itemprop="name">Roblox</span>
+</div>
+<div id="paper_venue">
+<em> ACM Transactions on Graphics (SIGGRAPH 2023)</em>
+</div>
+<br>
+<div id="paper-teaser">
+ <img src="teaser.png" width="800px">
+ </div>
+
+ <br>
+<h2>Abstract</h2>
+<div id="abstract">
+We present a deep learning method for composite and task-driven motion control for physically simulated characters. In contrast to existing data-driven approaches using reinforcement learning that imitate full-body motions, we learn decoupled motions for specific body parts from multiple reference motions simultaneously and directly by leveraging the use of multiple discriminators in a GAN-like setup. In this process, there is no need of any manual work to produce composite reference motions for learning. Instead, the control policy explores by itself how the composite motions can be combined automatically. We further account for multiple task-specific rewards and train a single, multi-objective control policy. To this end, we propose a novel framework for multi-objective learning that adaptively balances the learning of disparate motions from multiple sources and multiple goal-directed control objectives. In addition, as composite motions are typically augmentations of simpler behaviors, we introduce a sample-efficient method for training composite control policies in an incremental manner, where we reuse a pre-trained policy as the meta policy and train a cooperative policy that adapts the meta one for new composite tasks. We show the applicability of our approach on a variety of challenging multi-objective tasks involving both composite motion imitation and multiple goal-directed control
+</div>
+
+<br>
+<h2>Downloads</h2>
+<div class="row">
+  <div class="col-xs-5 col-md-2">
+		<div class="text-center ">
+		 <a href="https://arxiv.org/pdf/2305.03286.pdf" target="_blank">
+         <i class="fa fa-file-pdf-o fa-3x" style="color:red" ></i>		  
+          </a>
+        </div> <!-- icon-image-div -->
+        <div class="text-center ">
+          <a href="https://arxiv.org/pdf/2305.03286.pdf" target="_blank">
+            Paper<br/>
+          </a>
+        </div> <!-- icon-text-div -->
+  </div>
+  
+   <div class="col-xs-5 col-md-2">
+   <div class="text-center">
+          <a  href="" target="_blank">
+            <i class="fa fa-file-archive-o fa-3x"   style="color:black" ></i>
+          </a>
+        </div> 
+        <div class="text-center">
+          <a href="" target="_blank">
+            Supplementary material<br/>
+          </a>
+        </div> 
+  </div>
+  
+   <div class="col-xs-5 col-md-2">
+   <div class="text-center">
+          <a  href="https://youtu.be/mcRAxwoTh3E">
+            <i class="fa fa-youtube fa-3x"></i>
+          </a>
+        </div> 
+        <div class="text-center">
+          <a href="https://youtu.be/mcRAxwoTh3E">
+            Video<br/>
+          </a>
+        </div> 
+  </div>
+  
+   <div class="col-xs-5 col-md-2">
+   <div class="text-center">    
+	   <a  href="https://github.com/xupei0610/CompositeMotion">
+            <i class="fa fa-github fa-3x" style="color:black" ></i>
+	   </a>	   
+        </div> 
+        <div class="text-center">
+          <p><a href="https://github.com/xupei0610/CompositeMotion">
+		  Github Code </a> <br/>
+          </p>
+        </div> 
+  </div>
+  
+  
+
+  
+ </div>
+
+<br>
+
+<h2>Bibtex</h2>
+<pre>
+@article{composite2023,
+ author = {Xu, Pei and Shang, Xiumin and Zordan, Victor and Karamouzas, Ioannis},
+ title = {Composite Motion Learning with Task Control},
+ journal={ACM Transactions on Graphics},
+ volume={42},
+ number={4},
+ year={2023},
+ publisher={ACM New York, NY, USA}
+}
+</pre>
+
+ <!-- Analytics
+ ================================================== -->
+<div><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img src="https://c.statcounter.com/12879446/0/a9a07627/1/" alt="Web Analytics"</a></div>
+
+
+</body></html>
