@@ -75,6 +75,7 @@ ul ul ul {
 pre {
     font-size: 14px;
 	background-color: #ffffff;
+	white-space: pre-wrap;
 	border:none;
 }
 
