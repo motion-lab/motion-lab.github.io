@@ -78,5 +78,17 @@ pre {
 	border:none;
 }
 
+pre[class*="language-css"] {
+  position: relative;
+  overflow: auto;
+}
+
+pre[class*="language-css"] button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0.15rem;
+  text-shadow: #c4c4c4 0 0 2px;
+}
 
 
