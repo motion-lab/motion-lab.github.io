@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta content="AdaptNet: Policy Adaptation for Physics-Based Character Control" name="description">
+<meta content="character animation, physics-based control, motion synthesis, reinforcement learning, motion style transfer, domain adaptation, GAN">
+<title>AdaptNet</title>
+
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"><!-- Bootstrap CSS File -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<!-- Libraries CSS Files -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+<link type="text/css" href="../css/project.css" rel="stylesheet"/>
+
+<body>
+
+<h1>AdaptNet: Policy Adaptation for <br> Physics-Based Character Control</h1>
+	
+<div id="authors">
+<a href="https://github.com/xupei0610/" target="_blank">Pei Xu</a><sup><small>1,2</small></sup>,
+<a href="http://kaixiangxie.de/" target="_blank">Kaixiang Xie</a><sup><small>3</small></sup>,
+<a href="https://profs.etsmtl.ca/sandrews/" target="_blank">Sheldon Andrews</a><sup><small>4,2</small></sup>,
+<a href="https://www.cs.mcgill.ca/~kry/" target="_blank">Paul G. Kry</a><sup><small>3</small></sup>,
+<a href="https://www.cs.ucdavis.edu/~neff/" target="_blank">Michael Neff</a><sup><small>5</small></sup>,
+<a href="https://casual-effects.com/" target="_blank">Morgan McGuire</a><sup><small>2,6</small></sup>,<br>
+<a href="https://people.cs.clemson.edu/~ioannis/" target="_blank">Ioannis Karamouzas</a><sup><small>7</small></sup>,
+<a href="https://people.computing.clemson.edu/~vbz/" target="_blank">Victor Zordan</a><sup><small>2,1</small></sup>
+</div>
+<div id="affiliations">
+<sup><small>1</small></sup><span itemprop="name">Clemson University,</span>
+<sup><small>2</small></sup><span itemprop="name">Roblox,</span>
+<sup><small>3</small></sup><span itemprop="name">McGill University,</span>
+<sup><small>4</small></sup><span itemprop="name">École de Technologie Supérieure,</span><br>
+<sup><small>5</small></sup><span itemprop="name">University of California, Davis,</span>
+<sup><small>6</small></sup><span itemprop="name">University of Waterloo,</span>
+<sup><small>7</small></sup><span itemprop="name">University of California, Riverside</span>
+
+</div>
+<div id="paper_venue">
+<em> ACM Transactions on Graphics (SIGGRAPH Asia 2023)</em>
+</div>
+<br>
+<div id="paper-teaser">
+ <img src="teaser.png" width="800px">
+ </div>
+
+ <br>
+<h2>Abstract</h2>
+<div id="abstract">
+Motivated by humans' ability to adapt skills in the learning of new ones, this paper presents AdaptNet, an approach for modifying the latent space of existing policies to allow new behaviors to be quickly learned from like tasks in comparison to learning from scratch. Building on top of a given reinforcement learning controller, AdaptNet uses a two-tier hierarchy that augments the original state embedding to support modest changes in a behavior and further modifies the policy network layers to make more substantive changes. The technique is shown to be effective for adapting existing physics-based controllers to a wide range of new styles for locomotion, new task targets, changes in character morphology and extensive changes in environment. Furthermore, it exhibits significant increase in learning efficiency, as indicated by greatly reduced training times when compared to training from scratch or using other approaches that modify existing policies.
+</div>
+
+<br>
+<h2>Downloads</h2>
+<div class="row">
+  <div class="col-xs-5 col-md-2">
+		<div class="text-center ">
+		 <a href="https://arxiv.org/pdf/2310.00239.pdf" target="_blank">
+         <i class="fa fa-file-pdf-o fa-3x" style="color:red" ></i>		  
+          </a>
+        </div> <!-- icon-image-div -->
+        <div class="text-center ">
+          <a href="https://arxiv.org/pdf/2310.00239.pdf" target="_blank">
+            Paper<br/>
+          </a>
+        </div> <!-- icon-text-div -->
+  </div>
+  
+   <!--<div class="col-xs-5 col-md-2">
+   <div class="text-center">
+          <a  href="" target="_blank">
+            <i class="fa fa-file-archive-o fa-3x"   style="color:black" ></i>
+          </a>
+        </div> 
+        <div class="text-center">
+          <a href="" target="_blank">
+            Supplementary material<br/>
+          </a>
+        </div> 
+  </div>-->
+  
+   <div class="col-xs-5 col-md-2">
+   <div class="text-center">
+          <a  href="https://youtu.be/WxmJSCNFb28">
+            <i class="fa fa-youtube fa-3x"></i>
+          </a>
+        </div> 
+        <div class="text-center">
+          <a href="https://youtu.be/WxmJSCNFb28">
+            Video<br/>
+          </a>
+        </div> 
+  </div>
+  
+   <div class="col-xs-5 col-md-2">
+   <div class="text-center">    
+	   <a  href="">
+            <i class="fa fa-github fa-3x" style="color:black" ></i>
+	   </a>	   
+        </div> 
+        <div class="text-center">
+          <p>
+		  Github Code (coming soon)   <br/>
+          </p>
+        </div> 
+  </div>
+  
+  
+
+  
+ </div>
+
+<br>
+
+<h2>Bibtex</h2>
+<pre>
+@article{adaptnet2023,
+author = {Xu, Pei and Xie, Kaixiang and Andrews, Sheldon and Kry, Paul G. and Neff, Michael and McGuire, Morgan and Karamouzas, Ioannis and Zordan, Victor},
+ title = {AdaptNet: Policy Adaptation for Physics-Based Character Control},
+ journal={ACM Transactions on Graphics},
+ volume={42},
+ number={6},
+ articleno = {178},
+ year={2023},
+ publisher={ACM New York, NY, USA}
+}
+</pre>
+
+ <!-- Analytics
+ ================================================== -->
+<div><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img src="https://c.statcounter.com/12929318/0/6044798c/1/" alt="Web Analytics"</a></div>
+
+
+</body></html>
