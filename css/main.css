@@ -75,3 +75,93 @@ body {
 }
 .carousel-indicators { bottom: -10px;}
 
+
+/* Homepage banner and People directory */
+.lab-hero { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; padding: 48px; margin: 24px 0 0; border-radius: 18px; background: radial-gradient(ellipse at top right, #20577b, transparent 65%), #092b49; color: #fff; overflow: hidden; }
+.hero-eyebrow { color: #ffc857; text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: bold; }
+.lab-hero h1 { font-size: 42px; font-weight: 700; line-height: 1.12; margin: 18px 0; color: #fff; }
+.hero-lead { font-size: 24px; line-height: 1.35; color: #e5eef5; }
+.hero-description { max-width: 430px; color: #d3e1ec; margin: 20px 0 26px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 22px; align-items: center; }
+.hero-button { background: #ffc857; color: #092b49; padding: 12px 18px; border-radius: 6px; font-weight: bold; }
+.hero-button:hover, .hero-button:focus { background: #ffdb8d; color: #092b49; }
+.hero-link { color: #fff; text-decoration: underline; text-underline-offset: 4px; }
+.hero-link:hover, .hero-link:focus { color: #ffc857; }
+.hero-visual { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: center; min-width: 0; }
+.hero-visual figure { position: relative; margin: 0; border-radius: 9px; overflow: hidden; background: #fff; }
+.hero-visual .hero-feature { grid-column: 1 / -1; }
+.hero-visual img { display: block; width: 100%; height: 135px; object-fit: cover; }
+.hero-feature img { height: 190px; }
+.hero-visual figcaption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 18, 35, .9)); color: #fff; padding: 24px 12px 10px; font-size: 12px; }
+.people-section { margin: 28px 0; padding-bottom: 22px; border-bottom: 1px solid #e1e8ee; }
+.people-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 30px; padding: 0; margin: 18px 0 0; list-style: none; }
+.people-list li { color: #18364d; }
+.people-list span { display: block; font-size: 14px; color: #5a5a5a; margin-top: 3px; }
+#projects, #prospective-students { scroll-margin-top: 75px; }
+a:focus-visible { outline: 3px solid #d49b13; outline-offset: 4px; }
+@media (max-width: 991px) { .lab-hero { padding: 30px; gap: 24px; } .lab-hero h1 { font-size: 34px; } }
+@media (max-width: 767px) { .lab-hero { grid-template-columns: 1fr; padding: 26px 20px; } .hero-lead { font-size: 22px; } .people-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .people-list { grid-template-columns: 1fr; } }
+.recent-project { display: grid; grid-template-columns: 198px minmax(0, 1fr); gap: 50px; margin-bottom: 24px; }
+.recent-project h4 { font-size: 15px; font-weight: bold; line-height: 1.5; margin: 0 0 5px; }
+.project-label { align-self: start; padding: 22px 18px; background: #eaf1f6; border-left: 4px solid #d6a329; color: #173e5d; font-size: 22px; line-height: 1.25; font-weight: bold; border-radius: 4px; }
+.project-label span { display: block; font-size: 11px; letter-spacing: .05em; margin-bottom: 14px; }
+@media (max-width: 767px) { .recent-project { grid-template-columns: 1fr; gap: 14px; } .project-label { font-size: 18px; } }
+.project-award { display: inline-block; padding: 4px 10px; border-radius: 4px; background: #fff2cc; color: #684900; font-size: 13px; }
+
+/* Keep legacy sponsor artwork within the phone viewport. */
+img[src='images/sponsors.png'] { max-width: 100%; height: auto; }
+
+.project-image { display: block; align-self: start; border: 1px solid #e1e8ee; border-radius: 8px; overflow: hidden; background: #fff; }
+.project-image img { display: block; width: 100%; height: 170px; object-fit: contain; }
+@media (max-width: 767px) { .project-image { max-width: 360px; } .project-image img { height: 210px; } }
+
+/* Research overview and alternative project presentations */
+.hero-topics { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 22px 0 26px; list-style: none; }
+.hero-topics li { padding: 5px 9px; border: 1px solid #54728b; border-radius: 20px; color: #e5eef5; font-size: 11px; }
+.projects-section { margin-top: 42px; }
+.projects-section > h3 { color: #123652; font-size: 28px; font-weight: 700; margin-bottom: 28px; }
+.project-list .recent-project { grid-template-columns: 280px minmax(0, 1fr); gap: 32px; margin: 0; padding: 26px 0; border-bottom: 1px solid #e1e8ee; }
+.project-list .recent-project:first-child { padding-top: 0; }
+.project-list .recent-project h4 { color: #123652; font-size: 19px; line-height: 1.35; margin: 0 0 10px; }
+.project-list .project-image img { height: 190px; }
+.project-list .recent-project a { font-weight: 600; }
+.featured-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+.project-list .featured-project { display: flex; flex-direction: column; gap: 0; padding: 0; border: 1px solid #e1e8ee; border-radius: 12px; overflow: hidden; background: #f8fafc; }
+.featured-project .project-image { width: 100%; border: 0; border-radius: 0; }
+.project-list .featured-project .project-image img { height: 250px; }
+.featured-project > div { padding: 24px; }
+.more-projects-heading { margin: 34px 0 0; color: #123652; font-size: 20px; font-weight: bold; }
+@media (max-width: 767px) { .project-list .recent-project { grid-template-columns: 1fr; gap: 18px; } .project-list .project-image { width: 100%; max-width: none; } .project-list .project-image img { height: 220px; } .featured-projects { grid-template-columns: 1fr; } .project-list .featured-project { gap: 0; } }
+
+/* Two topic rows; crop the Gen-C scene without its embedded title. */
+.hero-topics.topic-rows { display: block; }
+.hero-topics .topic-row { display: flex; flex-wrap: wrap; gap: 6px; padding: 0; margin: 0 0 7px; border: 0; }
+.topic-row span { display: inline-block; border: 1px solid #54728b; border-radius: 20px; padding: 5px 8px; font-size: 10px; }
+.gen-c-scene { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; }
+.project-list .project-image .gen-c-scene img { position: absolute; max-width: none; width: 228.57%; height: auto; left: -66.43%; top: -61.27%; }
+.featured-project .project-image { height: 250px; display: flex; align-items: center; background: #fff; }
+
+/* Preserve the original Gen-C collage, excluding only the title strip. */
+.gen-c-scene { aspect-ratio: 1280 / 540; }
+.project-list .project-image .gen-c-scene img { width: 100%; height: auto; left: 0; top: -33.333%; }
+/* Approved pale blue-gray theme */
+
+.lab-hero { background: #f1f5f8; color: #243746; border: 1px solid #dce3e8; border-radius: 10px; }
+.lab-hero h1 { color: #17364d; }
+.hero-eyebrow { color: #80621e; }
+.hero-lead { color: #344f63; }
+.hero-description { color: #5a5a5a; }
+.hero-link { color: #17364d; }
+.hero-link:hover, .hero-link:focus { color: #80621e; }
+.hero-button { background: #f5e4b6; border: 1px solid #dfca92; color: #263f52; }
+.hero-button:hover, .hero-button:focus { background: #eddaaa; color: #17364d; }
+.topic-row span { color: #435b6c; background: #fff; border-color: #d8e1e7; }
+.hero-visual figure { border: 1px solid #e1e6ea; }
+.lab-hero.banner-soft { background: #f1f5f8; border-color: #e0e7ed; }
+.banner-soft .topic-row span { background: #fff; }
+
+/* Shared page colors */
+h1, h2, h3, h4, h5 { color: #17364d; }
+a { color: #24516f; }
+a:hover, a:focus { color: #17364d; }
