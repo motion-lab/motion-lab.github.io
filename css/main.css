@@ -204,3 +204,11 @@ a:hover, a:focus { color: #17364d; }
 /* Match the visible Gen-C collage height in the featured cards. */
 .featured-project .push-single-frame { aspect-ratio: 1280 / 540; }
 .project-list .featured-project .project-image .push-single-frame img { width: 286.458333%; left: -164.84375%; top: -4.320988%; }
+
+/* Keep the featured artwork at the reviewed size on wide screens. */
+.featured-project .project-image { justify-content: center; }
+.featured-project .gen-c-scene,
+.featured-project .push-single-frame { flex: 0 1 360px; max-width: 360px; width: 100%; }
+/* Moderately larger featured artwork and a clearer full NH-TTC figure. */
+.featured-project .gen-c-scene, .featured-project .push-single-frame { flex-basis: 440px; max-width: 440px; }
+.project-list .project-image.nhttc-image img { padding: 10px; object-fit: contain; }
