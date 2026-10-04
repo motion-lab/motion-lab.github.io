@@ -165,3 +165,42 @@ img[src='images/sponsors.png'] { max-width: 100%; height: auto; }
 h1, h2, h3, h4, h5 { color: #17364d; }
 a { color: #24516f; }
 a:hover, a:focus { color: #17364d; }
+
+.push-comparison { width: 100%; }
+.push-frame { width: 100%; aspect-ratio: 750 / 240; overflow: hidden; position: relative; }
+.project-list .project-image .push-frame img { position: absolute; width: 200%; height: auto; max-width: none; left: 0; top: 0; }
+.project-list .project-image .push-frame-later img { left: -100%; }
+/* Use the later crowd snapshot by itself. */
+.push-single-frame { position: relative; width: 100%; aspect-ratio: 750 / 240; overflow: hidden; }
+.project-list .project-image .push-single-frame img { position: absolute; width: 200%; max-width: none; height: auto; left: -100%; top: 0; }
+/* Concise software directory */
+.software-page { margin-top: 86px; }
+.software-intro { padding: 0 0 22px; }
+.software-intro h1 { font-size: 34px; font-weight: 700; margin: 0 0 10px; }
+.software-intro p { color: #667682; font-size: 17px; }
+.software-jump-links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 34px; }
+.software-jump-links a { background: #f1f5f8; border: 1px solid #dce5eb; border-radius: 5px; padding: 8px 12px; font-size: 13px; }
+.software-group { margin-bottom: 38px; scroll-margin-top: 78px; }
+.software-group h2 { font-size: 23px; font-weight: 700; margin: 0 0 10px; }
+.software-directory { list-style: none; padding: 0; margin: 0; }
+.software-entry { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 18px 0; border-bottom: 1px solid #e1e8ee; }
+.software-details { min-width: 0; }
+.software-name { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 6px; }
+.software-name h3 { margin: 0; font-size: 17px; font-weight: bold; line-height: 1.4; }
+.software-tag { padding: 2px 7px; background: #f1f5f8; color: #566b7a; border-radius: 4px; font-size: 11px; }
+.software-pending { background: #fff2cc; color: #684900; }
+.software-details p { margin: 0; color: #5a5a5a; }
+.software-repo { flex-shrink: 0; padding: 7px 11px; border: 1px solid #ccd9e2; border-radius: 5px; font-size: 13px; font-weight: 600; }
+.software-repo:hover, .software-repo:focus { background: #f1f5f8; text-decoration: none; }
+@media(max-width: 600px) { .software-entry { align-items: flex-start; gap: 10px; flex-direction: column; } .software-intro h1 { font-size: 29px; } .software-intro p { font-size: 15px; } }
+
+/* Fill the Push-and-Step image area and give NH-TTC breathing room. */
+.push-single-frame { aspect-ratio: 16 / 9; }
+.project-list .project-image .push-single-frame img { width: 351.5625%; left: -213.28125%; height: auto; }
+.project-list .project-image.nhttc-image img { padding: 22px; object-fit: contain; }
+/* Slightly tighter framing around the central Push-and-Step interaction. */
+.project-list .project-image .push-single-frame img { width: 386.71875%; left: -239.609375%; top: -5%; }
+
+/* Match the visible Gen-C collage height in the featured cards. */
+.featured-project .push-single-frame { aspect-ratio: 1280 / 540; }
+.project-list .featured-project .project-image .push-single-frame img { width: 286.458333%; left: -164.84375%; top: -4.320988%; }
